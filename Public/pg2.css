@@ -1,0 +1,143 @@
+*{
+   padding:0;
+   font-family: 'Oswald', sans-serif;
+}
+body{
+   margin: 0px;
+}
+.nav{
+    display: flex;
+    margin:0;
+    width: 100%;
+    gap:30%;
+    background-color: #324E7B;
+    padding: 0;
+}
+@media screen and (max-width: 700px){
+    nav{
+        flex-direction: column;
+    }
+}
+.navbtn:hover{
+    background-color: #ffffff;
+    color: #000;
+    border-radius: 10%;
+}
+.navbtn{
+    padding-left: 5px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-right: 5px;
+}
+.nav a{
+    position: relative;
+}
+.nav ul li{
+    list-style-type: none;
+}
+
+.weblogo img{
+    top:10%;
+    position: relative;
+    height: 80%;
+    width:80px;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+    .contents{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 50%;
+        height: 5vh;
+        margin-top: 25px;
+        margin-bottom: 25px;
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+    .contents ul{
+        list-style-type:none;
+    }
+    .contents li a{
+        text-decoration:none;
+        color:white;
+        font-size: larger;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        
+    }
+
+.main {
+    position: absolute;
+}
+
+
+.r1{
+    position: relative;
+    left: 70%;
+    height: 170px;
+    background-image: url("");
+}
+.container h1{
+    left: 70%;
+    position: relative;
+}
+.fil_sec{
+    position: absolute;
+    border-left: 2px solid black;
+    top: 5%;
+    height: 800px;
+    left: 47%;
+    
+}
+
+#list{
+    position: absolute;
+    width: 30%;
+    top: 3%;
+
+}
+.btn{
+    text-align: left;
+    justify-content: left;
+}
+.btn-group-vertical{
+    margin-top: 10px;
+}  
+.btn-group-vertical h4{
+    text-align: center; 
+    width: 100%; 
+    font-size: xx-large;
+}
+#list h4{
+    align-items: center;
+}
+
+.filter_text{
+    color: black;
+    font-size: 30px;
+}
+
+.btn{
+    position: absolute;
+    top: 50%;
+}
+
+.main a{
+    top: 50%;
+}
+
+.btn-group{
+    padding: 5px;
+  }
+
+
+
+
+
+
+
+
+
+
+
+  

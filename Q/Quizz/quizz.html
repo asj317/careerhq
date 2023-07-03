@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charste="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Website</title>
+    <link rel="stylesheet" type="text/css" href="Quizzstyle.css">
+</head>
+
+<body>
+    <div class="main-div">
+        <div class="inner-div">
+            <h2 class="question">Quesions comes here</h2>
+            <ul>`   
+                <li>
+                    <input type="radio" name="answer" id="a" class="answer">
+                    <label for="ansl" id="option1">Anwer Option</label>
+                <li>
+
+                <li>
+                    <input type="radio" name="answer" id="b" class="answer">
+                    <label for="ans2" id="option2">Anwer Option</label>
+                <li>
+
+                <li>
+                    <input type="radio" name="answer" id="c" class="answer">
+                    <label for="ans3" id="option3">Anwer Option</label>
+                <li>
+
+                <li>
+                    <input type="radio" name="answer" id="d" class="answer">
+                    <label for="ans4" id="option4">Anwer Option</label>
+                <li>
+                    <ul>
+                        <button id="submit">submit</button>
+                        <!-- <div id="showScore" class="scoreArea"></div> -->
+                    </ul>
+        </div>
+        <div id="showScore" class="scoreArea"></div>
+    </div>
+    
+    <!-- <script type="text/JavaScript" src="script.js"> -->
+<script>
+const quizDB = [
+    {
+        question: "Q1:Create art for sale and exhibition ?",
+        a: "Dislike it",
+        b: "Neutral",
+        c: "Like it",
+        d: "Hate it",
+        ansA: "a",
+        ansB: "b",
+        ansC: "c",
+        ansD: "d",
+        ansE: "e"
+    },
+    {
+        question: "Q2:Direct the making of a movie? ",
+        a: "Dislike it",
+        b: "Neutral",
+        c: "Like it",
+        d: "Hate it",
+        ansA: "a",
+        ansB: "b",
+        ansC: "c",
+        ansD: "d",
+        ansE: "e"
+    },
+    {
+        question: "Q3: Entertain an audience",
+
+        a: "Dislike it",
+        b: "Neutral",
+        c: "Like it",
+        d: "Hate it",
+        ansA: "a",
+        ansB: "b",
+        ansC: "c",
+        ansD: "d",
+        ansE: "e"
+    },
+    {
+        question: "Q4: Estimate the value of items for an insurance policy",
+        a: "Hate it",
+        b: "Dislike it",
+        c: "Neutral",
+        d: "Like it",
+        ansA: "a",
+        ansB: "b",
+        ansE: "e"
+    },
+    {
+        question: "Q5: Examine artifacts left behind by previous civilizations",
+        a: "Dislike it",
+        b: "Neutral",
+        c: "Like it",
+        d: "Hate it",
+        ansA: "a",
+        ansB: "b",
+        ansE: "e",
+    },
+    {
+        question: "Q6: Find support resources for families in need",
+        a: "Like it",
+        b: "Hate it",
+        c: "Neutral",
+        d: "Dislike it",
+        ansA: "a",
+        ansB: "b",
+        ansC: "c",
+        ansD: "d",
+        ansE: "e"
+    },
+    {
+        question: "Q7: Help a client make business decisions? ",
+        a: "Hate it",
+        b: "Dislike it",
+        c: "Neutral",
+        d: "Like it",
+        ansA: "a",
+        ansB: "b",
+        ansC: "c",
+        ansD: "d",
+        ansE: "e"
+    },
+    {
+        question: "Q8: Help elderly people complete their daily activities ? ",
+        a: "Like it",
+        b: "Dislike it",
+        c: "Neutral",
+        d: "Hate it",
+        ansA: "a",
+        ansB: "b",
+        ansC: "c",
+        ansD: "d",
+        ansE: "e"
+    },
+   {
+        question: "Q9: Help someone with a disability get dressed? ",
+        a: "Hate it",
+        b: "Dislike it",
+        c: "Neutral",
+        d: "Like it",
+        ansA: "a",
+        ansB: "b",
+        ansC: "c",
+        ansD: "d",
+        ansE: "e"
+    },
+    {
+        question: "Q10: Install drywall in houses ? ",
+        a: "Hate it",
+        b: "Dislike it",
+        c: "Neutral",
+        d: "Like it",
+        ansA: "a",
+        ansB: "b",
+        ansC: "c",
+        ansD: "d",
+        ansE: "e"
+    },
+    {
+        question: "Q11: Interpret results of medical tests? ",
+        a: "Hate it",
+        b: "Dislike it",
+        c: "Neutral",
+        d: "Like it",
+        ansA: "a",
+        ansB: "b",
+        ansC: "c",
+        ansD: "d",
+        ansE: "e"
+    },
+    {
+        question: "Q12: Investigate causes of climate change ? ",
+        a: "Hate it",
+        b: "Dislike it",
+        c: "Neutral",
+        d: "Like it",
+        ansA: "a",
+        ansB: "b",
+        ansC: "c",
+        ansD: "d",
+        ansE: "e"
+    },
+    {
+        question: "Q13: Keep records of payments received? ",
+        a: "Hate it",
+        b: "Dislike it",
+        c: "Neutral",
+        d: "Like it",
+        ansA: "a",
+        ansB: "b",
+        ansC: "c",
+        ansD: "d",
+        ansE: "e"
+    },
+    {
+        question: "Q14:Make customized kitchen cabinets? ",
+        a: "Hate it",
+        b: "Dislike it",
+        c: "Neutral",
+        d: "Like it",
+        ansA: "a",
+        ansB: "b",
+        ansC: "c",
+        ansD: "d",
+        ansE: "e"
+    },
+    {
+        question: "Q15:Operate a crane at a building site    ? ",
+        a: "Hate it",
+        b: "Dislike it",
+        c: "Neutral",
+        d: "Like it",
+        ansA: "a",
+        ansB: "b",
+        ansC: "c",
+        ansD: "d",
+        ansE: "e"
+    }
+
+];
+
+const questiondiv = document.querySelector('.inner-div');
+const question = document.querySelector('.question');
+const option1 = document.querySelector('#option1');
+const option2 = document.querySelector('#option2');
+const option3 = document.querySelector('#option3');
+const option4 = document.querySelector('#option4');
+const submit = document.querySelector('#submit');
+
+const answers = document.querySelectorAll('.answer');
+
+const showScore = document.querySelector('#showScore');
+
+let questionCount = 0;
+let M_score = 0;
+let E_score = 0;
+let A_score = 0;
+let B_score = 0;
+let L_score = 0;
+
+const loadQuestion = () => {
+
+    const questionList = quizDB[questionCount];
+
+    question.innerText = questionList.question;
+
+    option1.innerText = questionList.a;
+    option2.innerText = questionList.b;
+    option3.innerText = questionList.c;
+    option4.innerText = questionList.d;
+
+}
+
+loadQuestion();
+
+const getCheckAnswer = () => {
+    let answer;
+
+    answers.forEach((curAnsElem) => {
+        if (curAnsElem.checked) {
+            answer = curAnsElem.id;
+        }
+    });
+
+    return answer;
+};
+
+
+const deselectAll = () => {
+    answers.forEach((curAnsElem) => curAnsElem.checked = false);
+}
+
+
+
+
+submit.addEventListener('click', () => {
+    const checkedAnswer = getCheckAnswer();
+
+
+    if (checkedAnswer === quizDB[questionCount].ansA) {
+        M_score = M_score + 5;
+    }
+    else if (checkedAnswer === quizDB[questionCount].ansB) {
+        E_score = E_score + 4;
+
+    } else if (checkedAnswer === quizDB[questionCount].ansC) {
+        A_score = A_score + 3;
+
+    } else if (checkedAnswer === quizDB[questionCount].ansD) {
+        B_score = B_score + 2;
+
+    } else {
+        L_score = L_score + 1;
+
+    };
+
+    questionCount++;
+
+    deselectAll();
+
+    if (questionCount < quizDB.length) {
+        loadQuestion();
+    } else {
+        questiondiv.classList.remove('inner-div');
+        questiondiv.innerHTML = '';
+
+
+        showScore.innerHTML = `
+       <h3> Medical ${M_score}%</h3>
+       <h3> Engineering ${E_score}%</h3>
+       <h3> Arts ${A_score}%</h3>
+       <h3> Commerce ${B_score}%</h3>
+       <h3> Lawyer ${L_score}%</h3>
+       <button class="btn" onclick="location.reload()">Retake Quiz</button>
+       `;
+
+        showScore.classList.remove('scoreArea');
+
+
+    }
+});
+    </script>
+
+</body>
+
+</html>
+
+

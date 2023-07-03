@@ -1,0 +1,1081 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Carrers Home</title>
+
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+  <script type="text/javascript">
+    (function () {
+      emailjs.init('X6xs1m_efReOPp-TW');
+    })();
+  </script>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap');
+  </style>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Crimson+Text&display=swap');
+  </style>
+  <style>
+    .htitle{
+      font-family: 'Dancing Script', cursive;
+      font-size:3.5rem;
+    }
+    .autocomplete {
+      font: 20px Arial;
+      width: 500px;
+      justify-content: center;
+
+    }
+
+    .Form_input {
+      position: relative;
+      height: 20px;
+      width: 60vw;
+      margin: 10px;
+      border: 1px solid transparent;
+      border-radius: 50px;
+      background-color: #f1f1f1;
+      padding: 10px;
+      font-size: 16px;
+      font: 23px Arial;
+      left: 5%;
+    }
+
+    .s {
+      position: relative;
+      height: 40px;
+      width: 25vw;
+      margin: 10px;
+      border: 1px solid transparent;
+      border-radius: 50px;
+      background-color: #3890c6;
+      padding: 10px;
+      font-size: 16px;
+      font: 23px Arial;
+      left: 30%;
+      text-align: center;
+      padding-bottom:15px;
+    }
+
+    Form.input[type=text] {
+      background-color: #f1f1f1;
+      width: 200%;
+      right: 250px;
+      margin-top: 10px;
+      margin-bottom: 8px;
+    }
+
+    Form.input[type=submit] {
+      height: 40px;
+      background-color: DodgerBlue;
+      color: #fff;
+      cursor: pointer;
+      font: 20px Arial;
+      left: 38%;
+      width: 28%;
+    }
+
+    .autocomplete-items {
+      position: absolute;
+      border: 1px solid #d4d4d4;
+      border-bottom: none;
+      border-top: none;
+      z-index: 99;
+      top: 100%;
+      left: 150px;
+      width: 150%;
+      right: 0;
+      font: 23px Arial;
+    }
+
+    .autocomplete-items div {
+      padding: 10px;
+      cursor: pointer;
+      background-color: #fff;
+      border-bottom: 1px solid #d4d4d4;
+      font: 23px Arial;
+    }
+
+
+    .autocomplete-items div:hover {
+      background-color: #e9e9e9;
+      font: 23px Arial;
+    }
+
+    /*when navigating through the items using the arrow keys:*/
+    .autocomplete-active {
+      background-color: DodgerBlue !important;
+      color: #ffffff;
+      font: 23px Arial;
+    }
+
+    #myInputautocomplete-list {
+      top: 65vh;
+      width: 50%;
+    }
+
+  
+    .modal .container label {
+      width: 100%;
+      height: 15%;
+      margin-top: 10px;
+      margin-bottom: 10px;
+      font-size: 1rem;
+
+    }
+
+    .modal .container input,
+    .modal .container select {
+      width: 100%;
+      height: 15%;
+      padding: 4px;
+      font-size: 1rem;
+      margin-top: 10px;
+      margin-bottom: 10px;
+      background-color: rgb(143, 214, 234);
+
+    }
+
+    .modal .container option,
+    .modal .container select {
+      width: 100%;
+      height: 15%;
+      padding: 4px;
+      font-size: 1rem;
+      margin-top: 10px;
+      margin-bottom: 10px;
+    }
+
+    .modal .container input::placeholder {
+      font-size: 1rem;
+
+    }
+
+    button,
+    a {
+      cursor: pointer;
+    }
+    .pinfo{
+      font-family: 'Crimson Text', serif;
+    }
+  </style>
+</head>
+
+<body>
+  <!--navbar-->
+  <div class="nav">
+    <a href="#" class="weblogo">
+      <img src="newimages/kindpng_1500383.png" alt="website logo" />
+    </a>
+
+    <ul class="contents">
+      <li><a href="/" class="navbtn">Home</a></li>
+      <li><a href="#categories" class="navbtn">Categories</a></li>
+      <li><a href="#artctr" class="navbtn">Articles</a></li>
+      <li><a href="#pcmainctr" class="navbtn">Popular</a></li>
+      <li><a href="#counselling" class="navbtn">Counselling</a></li>
+      <li><a href="#faqs" class="navbtn">FAQs</a></li>
+    </ul>
+  </div>
+
+  <!--basicinfo-->
+  <header>
+    <div class="header">
+      <div class="hleft">
+        <h1 class="htitle">Discover Yourself</h1>
+        <p class="pinfo">
+          Career guidance is crucial in helping students make informed
+          decisions about their future careers. It helps in aspects such as
+          Self-awareness,Exploration of Career Options,Setting Goals,Job
+          Search Strategies and much more......
+        </p>
+      </div>
+
+      <img src="/newimages/kindpng_4658253.png" alt="mainimage" class="hright" />
+    </div>
+  </header>
+
+  <!--1-->
+  <main>
+    <div class="categories" id="categories">
+      <form autocomplete="off" action="/career" method="post" id="rec18">
+        <div class="autocomplete" style="width: 1000px;">
+          <input class="Form_input" id="myInput" type="text" name="myPet" placeholder="Search a Career for e.g. Doctor" class="cinp"
+            style="font-size: medium; font-family: 'Roboto', sans-serif;">
+        </div>
+        <input class="Form_input s" type="submit">
+      </form>
+
+
+
+
+
+      <script>
+        function autocomplete(inp, arr) {
+          /*the autocomplete function takes two arguments,
+          the text field element and an array of possible autocompleted values:*/
+          var currentFocus;
+          /*execute a function when someone writes in the text field:*/
+          inp.addEventListener("input", function (e) {
+            var a, b, i, val = this.value;
+            /*close any already open lists of autocompleted values*/
+            closeAllLists();
+            if (!val) { return false; }
+            currentFocus = -1;
+            /*create a DIV element that will contain the items (values):*/
+            a = document.createElement("DIV");
+            a.setAttribute("id", this.id + "autocomplete-list");
+            a.setAttribute("class", "autocomplete-items");
+            /*append the DIV element as a child of the autocomplete container:*/
+            this.parentNode.appendChild(a);
+            /*for each item in the array...*/
+            for (i = 0; i < arr.length; i++) {
+              /*check if the item starts with the same letters as the text field value:*/
+              if (arr[i].substr(0, val.length).toUpperCase() == val.toUpperCase()) {
+                /*create a DIV element for each matching element:*/
+                b = document.createElement("DIV");
+                /*make the matching letters bold:*/
+                b.innerHTML = "<strong>" + arr[i].substr(0, val.length) + "</strong>";
+                b.innerHTML += arr[i].substr(val.length);
+                /*insert a input field that will hold the current array item's value:*/
+                b.innerHTML += "<input type='hidden' value='" + arr[i] + "'>";
+                /*execute a function when someone clicks on the item value (DIV element):*/
+                b.addEventListener("click", function (e) {
+                  /*insert the value for the autocomplete text field:*/
+                  inp.value = this.getElementsByTagName("input")[0].value;
+                  /*close the list of autocompleted values,
+                  (or any other open lists of autocompleted values:*/
+                  closeAllLists();
+                });
+                a.appendChild(b);
+              }
+            }
+          });
+          /*execute a function presses a key on the keyboard:*/
+          inp.addEventListener("keydown", function (e) {
+            var x = document.getElementById(this.id + "autocomplete-list");
+            if (x) x = x.getElementsByTagName("div");
+            if (e.keyCode == 40) {
+              /*If the arrow DOWN key is pressed,
+              increase the currentFocus variable:*/
+              currentFocus++;
+              /*and and make the current item more visible:*/
+              addActive(x);
+            } else if (e.keyCode == 38) { //up
+              /*If the arrow UP key is pressed,
+              decrease the currentFocus variable:*/
+              currentFocus--;
+              /*and and make the current item more visible:*/
+              addActive(x);
+            } else if (e.keyCode == 13) {
+              /*If the ENTER key is pressed, prevent the form from being submitted,*/
+              e.preventDefault();
+              if (currentFocus > -1) {
+                /*and simulate a click on the "active" item:*/
+                if (x) x[currentFocus].click();
+              }
+            }
+          });
+          function addActive(x) {
+            /*a function to classify an item as "active":*/
+            if (!x) return false;
+            /*start by removing the "active" class on all items:*/
+            removeActive(x);
+            if (currentFocus >= x.length) currentFocus = 0;
+            if (currentFocus < 0) currentFocus = (x.length - 1);
+            /*add class "autocomplete-active":*/
+            x[currentFocus].classList.add("autocomplete-active");
+          }
+          function removeActive(x) {
+            /*a function to remove the "active" class from all autocomplete items:*/
+            for (var i = 0; i < x.length; i++) {
+              x[i].classList.remove("autocomplete-active");
+            }
+          }
+          function closeAllLists(elmnt) {
+            /*close all autocomplete lists in the document,
+            except the one passed as an argument:*/
+            var x = document.getElementsByClassName("autocomplete-items");
+            for (var i = 0; i < x.length; i++) {
+              if (elmnt != x[i] && elmnt != inp) {
+                x[i].parentNode.removeChild(x[i]);
+              }
+            }
+          }
+          /*execute a function when someone clicks in the document:*/
+          document.addEventListener("click", function (e) {
+            closeAllLists(e.target);
+          });
+        }
+
+        /*An array containing all the country names in the world:*/
+        var b = ["Web_Developer", "Dentist", "Accountant", "Graphic_Designer", "Doctor", "Actor_Actress", "Aerospace_Engineer", "Architect", "Art_Director", "Auotomotive_Technician", "Baker", "Biologist", "Chef", "Civil_Engineer", "Computer_Programmer", "Data_Sceintist", "Electrician", "Fashion_Designer", "Financial_Analyst"];
+
+
+        /*initiate the autocomplete function on the "myInput" element, and pass along the countries array as possible autocomplete values:*/
+        autocomplete(document.getElementById("myInput"), b);
+      </script>
+
+
+      <p>
+        Top categories of career are important because they provide a
+        framework for understanding the different career options available,
+        and help individuals make informed decisions about their career paths.
+        They also help employers identify the skills and qualifications
+        required for different job roles, and facilitate career development
+        and advancement opportunities for employees.
+      </p>
+
+      <a href="/filter" class="tcbutton">Top Categories</a>
+    </div>
+
+    <!--2-->
+    <div class="artctr" id="artctr">
+      <div class="arttitle">
+        <h2>Videos and Articles</h2>
+      </div>
+      <div class="sec">
+
+        <button class="video-button" onclick="changeVideo()">Your Feed</button>
+        <button class="video-button" onclick="changeVideo1()">New Age Careers</button>
+        <button class="video-button" onclick="changeVideo2()">Entrance Exams</button>
+        <button class="video-button" onclick="changeVideo3()">Freelancing</button>
+        <button class="video-button" onclick="changeVideo4()">Others</button>
+
+      </div>
+
+      <script>
+
+        function changeVideo() {
+          const data = [{
+            vurl: "h-NjW4Wupzs",
+            iurl: "https://images.unsplash.com/photo-1561489422-45de3d015e3e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTJ8fG5lZWQlMjBvZiUyMGNhcmVlciUyMGd1aWRhbmNlfGVufDB8fDB8fHww&auto=format&fit=crop&w=500&q=60",
+            vLink: "https://www.youtube.com/watch?v=h-NjW4Wupzs&t=1s",
+            Acontent: "10 Reasons why Career Guidance is Important for Students",
+            iLink: "https://www.brainwonders.in/blog/why-career-guidance-is-important-for-student",
+            content: "How to Choose the Right Career?"
+          },
+          {
+            vurl: "EW4dEzfBst0",
+            vLink: "https://www.youtube.com/watch?v=EW4dEzfBst0",
+            iurl: "https://plus.unsplash.com/premium_photo-1676666378726-75f9eb9dfb66?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8aW50ZXJ2aWV3fGVufDB8fDB8fHww&auto=format&fit=crop&w=500&q=60",
+            Acontent: "Tips for a Successful Interview",
+            iLink: "https://ung.edu/career-services/online-career-resources/interview-well/tips-for-a-successful-interview.php",
+            content: "Follow these 14 Basic Rules to ensure you crack every interview !!!"
+          },
+          {
+            vurl: "4e6KSaCxcHs",
+            vLink: "https://www.youtube.com/watch?v=4e6KSaCxcHs",
+            iurl: "https://images.unsplash.com/photo-1638443436690-db587cc66f12?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8cHN5Y2hvbG9neXxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=500&q=60",
+            Acontent: "Careers in Psychology",
+            iLink: "https://www.apa.org/education-career/guide/careers",
+            content: "The Psychology of Career Decisions"
+          }]
+          var i = 0;
+
+          for (i; i < data.length; i++) {
+            var videoFrame = document.getElementById("video" + (i + 1));
+            var videoUrl = "https://www.youtube.com/embed/" + data[i].vurl;
+            videoFrame.setAttribute("src", videoUrl)
+            document.getElementById("p" + (i + 1)).innerHTML = data[i].content;
+            document.getElementById("aa" + (i + 1)).setAttribute("href", data[i].vLink);
+            document.getElementById("image" + (i + 1)).setAttribute("src", data[i].iurl);
+            document.getElementById("pp" + (i + 1)).innerHTML = data[i].Acontent;
+            document.getElementById("aaa" + (i + 1)).setAttribute("href", data[i].iLink);
+          }
+
+        }
+
+
+        function changeVideo1() {
+          const data = [{
+            vurl: "3jiDVDIwRfE",
+            iurl: "https://images.unsplash.com/photo-1523287562758-66c7fc58967f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTd8fGNhcmVlciUyMG9wdGlvbnN8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=500&q=60",
+            vLink: "https://www.youtube.com/watch?v=3jiDVDIwRfE",
+            Acontent: "New Age Careers - Is your child ready for 21st century ?",
+            iLink: "https://economictimes.indiatimes.com/industry/services/education/new-age-careers-is-your-child-ready-for-21st-century-jobs/articleshow/82903334.cms?from=mdr",
+            content: "10 JOBS That AI Will Replace By 2030 | AI Can Destroy Your Career | Teenagers, Students, College"
+          },
+          {
+            vurl: "srz2Wll4gmQ",
+            iurl: "https://images.unsplash.com/photo-1491438590914-bc09fcaaf77a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80",
+            vLink: "https://www.youtube.com/watch?v=srz2Wll4gmQ",
+            Acontent: "5 new-age career options for virtual as well as real world",
+            iLink: "https://www.indiatoday.in/education-today/jobs-and-careers/story/5-new-age-career-options-for-virtual-as-well-as-real-world-1857717-2021-09-27",
+            content: "What are the top IT skills for 2030 from expert predictions | Future tech?"
+          },
+          {
+            vurl: "Toyi3-dgzDY",
+            iurl: "https://images.unsplash.com/photo-1557804506-669a67965ba0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTN8fDIxc3QlMjBjZW50dXJ5JTIwam9ic3xlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=500&q=60",
+            vLink: "https://www.youtube.com/watch?v=Toyi3-dgzDY",
+            Acontent: "Best Career Options and Opportunities in India – 2023",
+            iLink: "https://www.mygreatlearning.com/blog/best-career-options-in-future/",
+            content: "FUTURE of Jobs: This report can change your career!"
+          }]
+          var i = 0;
+
+          for (i; i < data.length; i++) {
+            var videoFrame = document.getElementById("video" + (i + 1));
+            var videoUrl = "https://www.youtube.com/embed/" + data[i].vurl;
+            videoFrame.setAttribute("src", videoUrl)
+            videoFrame.src = videoUrl;
+            document.getElementById("p" + (i + 1)).innerHTML = data[i].content;
+            document.getElementById("aa" + (i + 1)).setAttribute("href", data[i].vLink);
+            document.getElementById("image" + (i + 1)).setAttribute("src", data[i].iurl);
+            document.getElementById("pp" + (i + 1)).innerHTML = data[i].Acontent;
+            document.getElementById("aaa" + (i + 1)).setAttribute("href", data[i].iLink);
+          }
+        }
+
+        function changeVideo2() {
+          const data = [{
+            vurl: "hSHQKnwpotw",
+            iurl: "https://images.unsplash.com/photo-1606326608606-aa0b62935f2b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8ZW50cmFuY2UlMjBleGFtfGVufDB8fDB8fHww&auto=format&fit=crop&w=500&q=60",
+            vLink: "https://www.youtube.com/watch?v=hSHQKnwpotw",
+            Acontent: "Your Guide to College Entrance Exams ...",
+            iLink: "https://www.coursera.org/articles/college-entrance-exams",
+            content: "CAT EXAM - How to Prepare | Online vs Offline Coaching | Study Material | Exam Schedule"
+          },
+          {
+            vurl: "YKWCdWvekFs",
+            iurl: "https://images.unsplash.com/photo-1604872441539-ef1db9b25f92?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTd8fGV4YW18ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=500&q=60",
+            vLink: "https://www.youtube.com/watch?v=YKWCdWvekFs",
+            Acontent: "How to Guide Students on Entrance Exam’s Preparations?",
+            iLink: "https://www.globalcareercounsellor.com/blog/how-to-guide-students-on-entrance-exams-preparations/",
+            content: "IAT 2023 | IAT Exam IISER Strategy | Harsh Sir | Vedantu Math JEE Made Ejee"
+          },
+          {
+            vurl: "7YnHoyO-dbw",
+            iurl: "https://images.unsplash.com/photo-1450101499163-c8848c66ca85?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8bGF3JTIwZXhhbXxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=500&q=60",
+            vLink: "https://www.youtube.com/watch?v=7YnHoyO-dbw",
+            Acontent: "Entrance Exams in India",
+            iLink: "https://vikaspedia.in/education/career-guidance/entrance-examinations/entrance-exams-in-india",
+            content: "How to Start Law Entrance Exam 2023 Preparation From Beginning ?"
+          }]
+          var i = 0;
+          for (i; i < data.length; i++) {
+            var videoFrame = document.getElementById("video" + (i + 1));
+            var videoUrl = "https://www.youtube.com/embed/" + data[i].vurl;
+            videoFrame.setAttribute("src", videoUrl)
+            videoFrame.src = videoUrl;
+            document.getElementById("p" + (i + 1)).innerHTML = data[i].content;
+            document.getElementById("aa" + (i + 1)).setAttribute("href", data[i].vLink);
+            document.getElementById("image" + (i + 1)).setAttribute("src", data[i].iurl);
+            document.getElementById("pp" + (i + 1)).innerHTML = data[i].Acontent;
+            document.getElementById("aaa" + (i + 1)).setAttribute("href", data[i].iLink);
+          }
+        }
+
+        function changeVideo3() {
+          const data = [{
+            vurl: "XCHP-qtdLps",
+            iurl: "https://images.unsplash.com/photo-1616499370260-485b3e5ed653?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8ZnJlZWxhbmNpbmd8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=500&q=60",
+            vLink: "https://www.youtube.com/watch?v=XCHP-qtdLps",
+            Acontent: "Freelancing",
+            iLink: "https://medium.com/tag/freelancing",
+            content: "All about Freelancing | Roadmap for Beginners | Earn in Lakhs"
+          },
+          {
+            vurl: "bq2QbYFofNw",
+            iurl: "https://plus.unsplash.com/premium_photo-1661764222092-1ef95e442919?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjV8fGZyZWVsYW5jaW5nfGVufDB8fDB8fHww&auto=format&fit=crop&w=500&q=60",
+            vLink: "https://www.youtube.com/watch?v=bq2QbYFofNw",
+            Acontent: "What Successful Freelancers Do Differently",
+            iLink: "https://hbr.org/2021/10/what-successful-freelancers-do-differently",
+            content: "How To Become A Freelance Video Editor in 2023 (in 60 DAYS) 🔥| Make Money Freelancing 💸"
+          },
+          {
+            vurl: "ubULSKRZYps",
+            iurl: "https://images.unsplash.com/photo-1651904613373-84d7d53ef87d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NDZ8fGZyZWVsYW5jaW5nfGVufDB8fDB8fHww&auto=format&fit=crop&w=500&q=60",
+            vLink: "https://www.youtube.com/watch?v=ubULSKRZYps",
+            Acontent: "Why Digital Freelancing is the Future of Work",
+            iLink: "https://www.entrepreneur.com/starting-a-business/why-digital-freelancing-is-the-future-of-work/374409",
+            content: "The Hard Truth about Freelancing | 3 things to know before starting Freelancing..."
+          }]
+          var i = 0;
+          for (i; i < data.length; i++) {
+            var videoFrame = document.getElementById("video" + (i + 1));
+            var videoUrl = "https://www.youtube.com/embed/" + data[i].vurl;
+            videoFrame.setAttribute("src", videoUrl)
+            videoFrame.src = videoUrl;
+            document.getElementById("p" + (i + 1)).innerHTML = data[i].content;
+            document.getElementById("aa" + (i + 1)).setAttribute("href", data[i].vLink);
+            document.getElementById("image" + (i + 1)).setAttribute("src", data[i].iurl);
+            document.getElementById("pp" + (i + 1)).innerHTML = data[i].Acontent;
+            document.getElementById("aaa" + (i + 1)).setAttribute("href", data[i].iLink);
+          }
+        }
+
+
+        function changeVideo4() {
+          const data = [{
+            vurl: "VznoKyh6AXs",
+            iurl: "https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8dGVjaCUyMGpvYnN8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=500&q=60",
+            vLink: "https://www.youtube.com/watch?v=VznoKyh6AXs",
+            Acontent: "Top 40 Best Paying Jobs in Technology in 2023",
+            iLink: "https://www.simplilearn.com/highest-paying-tech-jobs-article",
+            content: "How to learn to code FAST using ChatGPT (it's a game changer seriously)"
+          },
+          {
+            vurl: "qLvPYMHYCBY",
+            iurl: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8ZGF0YSUyMHNjaWVuY2V8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=500&q=60",
+            vLink: "https://www.youtube.com/watch?v=qLvPYMHYCBY",
+            Acontent: "What is data science?",
+            iLink: "https://www.ibm.com/topics/data-science",
+            content: "Should you do Engineering in 2023? Career options after BTech"
+          },
+          {
+            vurl: "1F6n6KM1lEo",
+            iurl: "https://plus.unsplash.com/premium_photo-1661758351472-52ed02e99496?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8Y2xvdWQlMjBjb21wdXRpbmd8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=500&q=60",
+            vLink: "https://www.youtube.com/watch?v=1F6n6KM1lEo",
+            Acontent: "Cloud Engineering...",
+            iLink: "https://www.cloudskillsboost.google/quests/66",
+            content: "How to become a Software Engineer ? B.Tech Vs BCA 🤔🤔 | College Wallah"
+          }]
+          var i = 0;
+          for (i; i < data.length; i++) {
+            var videoFrame = document.getElementById("video" + (i + 1));
+            var videoUrl = "https://www.youtube.com/embed/" + data[i].vurl;
+            videoFrame.setAttribute("src", videoUrl)
+            videoFrame.src = videoUrl;
+            document.getElementById("p" + (i + 1)).innerHTML = data[i].content;
+            document.getElementById("aa" + (i + 1)).setAttribute("href", data[i].vLink);
+            document.getElementById("image" + (i + 1)).setAttribute("src", data[i].iurl);
+            document.getElementById("pp" + (i + 1)).innerHTML = data[i].Acontent;
+            document.getElementById("aaa" + (i + 1)).setAttribute("href", data[i].iLink);
+          }
+        }
+      </script>
+
+      <div class="videosection">
+        <div class="vidsec1">
+          <iframe id="video1" src="https://www.youtube.com/embed/PgdL-N3rx24" title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen></iframe>
+          <p id="p1">7 TOP Careers for Success in your 20s | Job Tips 2022 |...</p>
+          <a id="aa1" href="https://www.youtube.com/watch?v=PgdL-N3rx24&list=TLPQMjUwNDIwMjNBzXpgPo_b6Q&index=1"
+            class="btn">Watch
+            Video</a>
+        </div>
+        <div class="vidsec1">
+
+          <iframe id="video2" src="https://www.youtube.com/embed/iOGmsUZwPCE" title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen></iframe>
+          <p id="p2">
+            Top 7 Best Freelancing Skills in 2023, How to Make Money From
+            Freelancing.
+          </p>
+          <a id="aa2" href="wvhttps://www.youtube.com/watch?v=iOGmsUZwPCE&list=TLPQMjUwNDIwMjNBzXpgPo_b6Q&index=2"
+            class="btn">Watch Video</a>
+        </div>
+        <div class="vidsec1">
+          <iframe id="video3" src="https://www.youtube.com/embed/ZOX2OsKZSuc" title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen></iframe>
+          <p id="p3">Top 5 BANK Exams After Graduation | Govt Jobs |...</p>
+          <a id="aa3" href="https://www.youtube.com/watch?v=ZOX2OsKZSuc&list=TLPQMjUwNDIwMjNBzXpgPo_b6Q&index=3"
+            class="btn">Watch
+            Video</a>
+        </div>
+      </div>
+
+      <div class="videosection">
+        <div class="vidsec1">
+          <img
+            src="https://images.unsplash.com/photo-1561489422-45de3d015e3e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTJ8fG5lZWQlMjBvZiUyMGNhcmVlciUyMGd1aWRhbmNlfGVufDB8fDB8fHww&auto=format&fit=crop&w=500&q=60"
+            alt="img1" id="image1" />
+          <p id="pp1">
+            Colleges in India offering degree in Artificial
+            Intelligence...
+          </p>
+          <a id="aaa1"
+            href="https://www.successcds.net/Career/qna/top-colleges-and-institutes-offering-degree-artificial-intelligence-17592.html"
+            class="btn">Read More</a>
+        </div>
+        <div class="vidsec1">
+          <img
+            src="https://plus.unsplash.com/premium_photo-1676666378726-75f9eb9dfb66?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8aW50ZXJ2aWV3fGVufDB8fDB8fHww&auto=format&fit=crop&w=500&q=60"
+            alt="" id="image2" />
+          <p id="pp2">Career Planning and Development...</p>
+          <a id="aaa2" href="https://leverageedu.com/blog/career-planning-and-development/" class="btn">Read More</a>
+        </div>
+        <div class="vidsec1">
+          <img
+            src="https://images.unsplash.com/photo-1638443436690-db587cc66f12?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8cHN5Y2hvbG9neXxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=500&q=60"
+            alt="img1" id="image3" />
+          <p id="pp3">
+            Interior Designing Courses after 12th Admission Process,
+            Eligibility, Scope...
+          </p>
+          <a id="aaa3" href="https://www.successcds.net/Career/qna/interior-designing-courses-after-12th-17764.html"
+            class="btn">Read More</a>
+        </div>
+      </div>
+    </div>
+
+
+
+    <!--3-->
+
+    <div class="pcmainctr" id="pcmainctr">
+      <div class="pctitle">
+        <h2 class="pc">Popular Careers</h2>
+      </div>
+
+      <div class="pcsec1 pcsec">
+        <div class="pcimg">
+          <h2 class="cname">MBA</h2>
+          <img src="/newimages/Telecommuting-rafiki.png" alt="img1" class="limg" height="200px" width="600px" />
+        </div>
+        <div class="pctext">
+          <div class="info">
+            <h3>Basic Info</h3>
+            <p class="mba">
+              An MBA, or Master of Business Administration, is a graduate
+              degree that focuses on developing skills in business and
+              management.</p>
+            <p class="mba1"> It typically takes two years to complete and covers
+              topics such as accounting, finance, marketing, and leadership.
+              An MBA can lead to a variety of career opportunities in fields
+              such as finance, consulting, marketing, and entrepreneurship.</p>
+            <h3>Exam Info</h3>
+            <p>GMAT,GRE,CAT,MAT,CMAT...</p>
+
+            <a class="read_more" href="/career/MBA">Read More</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="pcsec2 pcsec">
+        <div class="pcimg">
+          <h2 class="cname">ENGINEER</h2>
+          <img src="/newimages/Construction-rafiki.png" alt="img1" class="limg" />
+        </div>
+        <div class="pctext">
+          <div class="info">
+            <h3 class="bi">Basic Info</h3>
+            <p class="mba">
+              Engineering is the application of scientific, mathematical, and
+              technical knowledge to design, build, and maintain structures,
+              machines, systems, and processes.
+
+            </p>
+            <p class="mba1">It encompasses various fields
+              such as civil, mechanical, electrical, and computer engineering.
+              An engineering degree typically takes four years to complete and
+              can lead to a wide range of career opportunities in industries
+              such as aerospace, automotive, construction, electronics, and
+              software development.</p>
+            <h3>Exam Info</h3>
+            <p>JEE,SAT,ACT,GATE</p>
+            <a class="read_more" href="/career/Civil_Engineer">Read More</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="pcsec3 pcsec">
+        <div class="pcimg">
+          <h2 class="cname">LAW</h2>
+          <img src="/newimages/Office management-rafiki.png" alt="img1" class="limg" />
+        </div>
+        <div class="pctext">
+          <div class="info">
+            <h3>Basic Info</h3>
+            <p class="mba">
+              A career in law involves providing legal advice, representing
+              clients in court, and advocating for justice.
+            </p>
+            <p class="mba1">Lawyers can
+              specialize in various areas of law, such as corporate, criminal,
+              or environmental law. A law degree and passing the bar exam are
+              typically required to practice law.</p>
+            <h3>Exam Info</h3>
+            <p>LSAT,CLAT,AIBE,Bar Exam</p>
+            <a class="read_more" href="/career/Lawyer">Read More</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="pcsec4 pcsec">
+        <div class="pcimg">
+          <h2 class="cname">CHEF</h2>
+          <img src="/newimages/undraw_Chef_cu0r.png" alt="img1" class="limg" />
+        </div>
+        <div class="pctext">
+          <div class="info">
+            <h3>Basic Info</h3>
+            <p class="mba">
+              A career as a chef involves creating and preparing delicious meals in various culinary settings, such as
+              restaurants, hotels, or catering companies.
+            </p>
+            <p class="mba1">Chefs are skilled in culinary techniques, food preparation, flavor combinations, and menu
+              planning.</p>
+            <h3>Exam Info</h3>
+            <p>No specific entrance exam that applies universally. However, aspiring chefs often pursue culinary arts
+              programs or certifications offered by culinary schools and institutes.</p>
+            <a class="read_more" href="/career/Chef">Read More</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--4-->
+    <section class="counselling" id="counselling">
+      <div class="cmain">
+        <div class="ctext">
+          <h3 class="tte">Talk to Experts / Book A Career Session</h3>
+          <p>
+            A career counselling session can be a valuable investment in your
+            future. By booking a session , you can gain insights into your
+            strengths, interests, and values, and receive guidance on career
+            options that align with your goals.
+          </p>
+          <p class="cinfo">
+            A professional counsellor can provide you with personalized advice on job market trends, resume
+            writing, interview skills, and networking strategies, which can
+            help you navigate the complex job market and achieve your career
+            aspirations. Don't let indecision or uncertainty hold you back -
+          </p>
+          <h4>
+            Book a career counselling session today and take the first step
+            towards a fulfilling career.
+          </h4>
+          <div class="bnbtn">
+            <button class="bn" onclick="document.getElementById('id01').style.display='block'"
+              style="width:auto;">Book</button>
+          </div>
+
+        </div>
+        <img src="/newimages/img9.jpg" alt="cimage" class="cimg" />
+      </div>  
+
+      <div id="id01" class="modal">
+        <span onclick="document.getElementById('id01').style.display='none'" class="close"
+          title="Close Modal">&times;</span>
+
+        <div class="modal-content">
+          <div class="container">
+            <h1>Book A Session</h1>
+            <p>Please Fill in the Details to Book a Session</p>
+            <hr>
+
+            <label for="nameA"><b>Name</b></label>
+            <input id="nameA" type="text" placeholder="Enter Your Name" required>
+
+            <label for="emailA"><b>Email</b></label>
+            <input id="emailA" type="text" placeholder="Enter Your Email" required>
+
+            <label for="contactA"><b>Contact</b></label>
+            <input id="contactA" type="text" placeholder="Enter Your Contact No." required>
+            <label for="expert"><b>Choose Expert</b></label>
+       
+            <select id="expert">
+              <option value="abhishekmahajan3711@gmail.com">Expert 1 : Shreyash Gadekar </option>
+              <option value="golfieekiller@gmail.com">Expert 2 : Mahesh Ushir</option>
+              <option value="golfieekiller@gmail.com">Expert 3 : Ashwin Suralkar</option>
+              <option value="abhishekmahajan3711@gmail.com">Expert 4 : Anushri Tambe</option>
+            </select>
+ 
+            <p>On Booking a Session , an email will be sent to your Registered Email</p>
+
+            <div class="clearfix">
+
+              <button onclick="sendMail()" class="bknwbtn">Book Now</button>
+              <button type="button" onclick="document.getElementById('id01').style.display='none'"
+                class="cancelbtn">Cancel</button>
+
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <script>
+        // Get the modal
+        var modal = document.getElementById('id01');
+
+        // When the user clicks anywhere outside of the modal, close it
+        window.onclick = function (event) {
+          if (event.target == modal) {
+            modal.style.display = "none";
+          }
+        }
+      </script>
+      <script>
+
+
+        function sendMail() {
+
+          const array = [
+            {
+              "name": "Shreyash_Gadekar",
+              "e": "abhishekmahajan3711@gmail.com"
+            }, {
+              "name": "Mahesh_Ushir",
+              "e": "golfieekiller@gmail.com"
+            }, {
+              "name": "Ashwin_Suralkar",
+              "e": "golfieekiller@gmail.com"
+            },
+            {
+              "name": "Anushri_Tambe",
+              "e": "abhishekmahajan3711@gmail.com"
+            }]
+
+          var user_name = document.getElementById("nameA").value;
+          var user_email = document.getElementById("emailA").value;
+          var user_contact = document.getElementById("contactA").value;
+          var expert_email = document.getElementById("expert").value;
+          var expert_name;
+
+          for (var i = 0; i < array.length; i++) {
+            if (expert_email == array[i].e) {
+              expert_name = array[i].name;
+              break;
+            }
+          }
+          function sendExpert() {
+            var params = {
+              expert_name: expert_name,
+              user_name: user_name,
+              user_email: user_email,
+              user_contact: user_contact,
+              expert_email: expert_email
+
+            };
+
+            const serviceID = "service_4slkr12";
+            const templateID = "template_uj72ti6";
+
+            emailjs.send(serviceID, templateID, params)
+              .then(res => {
+                alert("Message sent to Expert successfully!!")
+
+              })
+              // .catch(err => console.log(err));
+          }
+
+          function sendUser() {
+
+            var params = {
+              user_name: user_name,
+              expert_email: expert_email,
+              user_email: user_email
+            };
+
+            const serviceID = "service_4slkr12";
+            const templateID = "template_smqxu7n";
+
+            emailjs.send(serviceID, templateID, params)
+              .then(res => {
+                // console.log(res);
+                alert("Booking Confirmation email send to you !!")
+
+              })
+              // .catch(err => console.log(err));
+          }
+
+          sendUser();
+          sendExpert();
+
+        }
+      </script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      <h3 class="exp">Our Experts</h3>
+      <div class="expslider">
+        <div class="exp1">
+          <img src="newimages/businessman.png" alt="expert1" />
+          <h3>Mahesh Ushir</h3>
+          <p>Well known and renown Career predictor and adviser </p>
+        </div>
+
+        <div class="exp1">
+          <img src="/newimages/teenager.png" alt="expert2" />
+          <h3>Anushri Tambe</h3>
+          <p>Psychologist who turns your passion into success</p>
+        </div>
+
+        <div class="exp1">
+          <img src="/newimages/teacher.png" alt="expert3" />
+          <h3>Ashwin Suralkar</h3>
+          <p>Expert in determining the future career and growth </p>
+        </div>
+      </div>
+
+      <!--5-->
+      <section class="faqs" id="faqs">
+        <h2>Frequently Asked Questions</h2>
+
+        <button class="accordion">1. What is Career Counselling ?</button>
+        <div class="panel">
+          <p class="finfo">
+            Career counselling is a process of helping individuals identify
+            their strengths, interests, and values, and explore career options
+            that align with their goals. </p>
+          <p class="finfo1">
+            A career counsellor provides guidance
+            on job market trends, resume writing, interview skills, and
+            networking strategies to help individuals achieve their career
+            aspirations.
+          </p>
+        </div>
+
+        <button class="accordion">2. Why is Career Counselling important ?</button>
+        <div class="panel">
+          <p class="finfo">
+            Career Counselling is important because it can help individuals make
+            informed decisions about their career paths. By gaining insights
+            into their strengths and interests, individuals can identify career
+            options that are fulfilling and rewarding. </p>
+          <p class="finfo1">A career counsellor can
+            also provide guidance on how to achieve career goals and navigate
+            the job market.
+          </p>
+        </div>
+
+        <button class="accordion">
+          3. Who can benefit from Career Counselling ?
+        </button>
+        <div class="panel">
+          <p class="finfo">
+            Anyone who is uncertain about their career path, looking to make a
+            career change, or seeking guidance on job search strategies can
+            benefit from career counselling. </p>
+          <p class="finfo1">
+            Career counselling can also be
+            useful for students who are selecting a college major or considering
+            postgraduate studies.
+          </p>
+        </div>
+
+        <button class="accordion">
+          4. How does Online Career Counselling work?
+        </button>
+        <div class="panel">
+          <p class="finfo">
+            When choosing a career counsellor, it's important to consider
+            factors such as their qualifications, experience, and approach. Look
+            for counsellors who have relevant certifications or degrees, and who
+            have experience working with individuals in your field or industry.</p>
+          <p class="finfo1">
+            You may also want to consider their availability, location, and
+            fees. It's a good idea to schedule a consultation with a few
+            different counsellors to find someone who you feel comfortable
+            working with and who understands your goals.
+          </p>
+        </div>
+      </section>
+
+      <!--lastpt-->
+      <footer>
+        <div class="infoctr">
+          <div class="fsec1">
+            <img src="/newimages/icons8-graduate-64.png" alt="" />
+            <h2>Students Impacted</h2>
+            <h2>20k+</h2>
+          </div>
+
+          <div class="fsec1">
+            <img src="/newimages/icons8-school-64.png" alt="" />
+            <h2>Partner Schools</h2>
+            <h2>1000+</h2>
+          </div>
+
+          <div class="fsec1">
+            <img src="/newimages/icons8-university-64.png" alt="" />
+            <h2>University Partners</h2>
+            <h2>100+</h2>
+          </div>
+
+          <div class="fsec1">
+            <img src="/newimages/icons8-business-class-68.png" alt="" />
+            <h2>Sessions Booked</h2>
+            <h2>1mn+</h2>
+          </div>
+        </div>
+      </footer>
+
+      <!--footer
+    <div class="sub-footer">
+        <a href="#">privacy policy</a>
+        <a href="#">terms&conditions</a>
+        <a href="#">security information</a>
+    </div>-->
+  </main>
+
+  <!-- <script src="mp.js" type="text/JavaScript"></script> -->
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+    integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+    crossorigin="anonymous"></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+    crossorigin="anonymous"></script>
+
+  <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
+  <!-- <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script> -->
+  <script>
+
+    var acc = document.getElementsByClassName("accordion");
+    var i;
+
+    for (i = 0; i < acc.length; i++) {
+      acc[i].addEventListener("click", function () {
+        /* Toggle between adding and removing the "active" class,
+        to highlight the button that controls the panel */
+        this.classList.toggle("active");
+
+        /* Toggle between hiding and showing the active panel */
+        var panel = this.nextElementSibling;
+        if (panel.style.display === "block") {
+          panel.style.display = "none";
+        } else {
+          panel.style.display = "block";
+        }
+      });
+    }
+
+
+
+  </script>
+</body>
+
+</html>

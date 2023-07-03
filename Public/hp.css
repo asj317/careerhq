@@ -1,0 +1,429 @@
+
+* {
+  padding: 0;
+  font-family: 'Oswald', sans-serif;
+}
+
+body {
+  margin: 0px;
+}
+
+.nav {
+  display: flex;
+  margin: 0;
+  width: 100%;
+  justify-content: space-between;
+  background-color: #324E7B;
+  padding: 0;
+  height: 10vh;
+}
+
+@media screen and (max-width: 700px) {
+  nav {
+    flex-direction: column;
+  }
+}
+
+.navbtn:hover {
+  background-color: #ffffff;
+  color: #000;
+  border-radius: 10%;
+}
+
+.navbtn {
+  padding-left: 5px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-right: 5px;
+}
+
+.nav a {
+  position: relative;
+}
+
+.nav ul li {
+  list-style-type: none;
+}
+
+.weblogo img {
+  top: 10%;
+  position: relative;
+  height: 80%;
+  width: 100px;
+  left: 30px;
+}
+
+.marqueeh2{
+  margin:0;
+  padding:0;
+}
+.contents {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 50%;
+  height: 5vh;
+  margin-bottom: 25px;
+  padding-left: 40px;
+  padding-right: 40px;
+  right: 0;
+}
+
+.contents ul {
+  list-style-type: none;
+}
+
+.contents li a {
+  text-decoration: none;
+  color: white;
+  font-size: larger;
+  font-family: 'Poppins', sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.main_heading{
+  display:flex;
+  justify-content: space-evenly;
+  padding:10px;
+  padding-left:0px;
+}
+.main_heading_left{
+
+  width:55%;
+}
+.main_heading_right{
+  width:35%;
+
+}
+.des {
+  display: flex;
+  justify-content: space-evenly;
+  gap: 40px;
+  height: 100%;
+}
+.head2{
+  font-size:2.5rem;
+  margin-bottom: 0;
+}
+.headl{
+  margin-top:2px;
+  font-size:4rem;
+  font-family: 'Dancing Script', cursive;
+}
+
+.welinfo {
+  margin-top: 20px;
+  font-family: 'Crimson Text', serif;
+}
+.main_heading_right p{
+  font-family: 'Crimson Text', serif;
+}
+
+.heading h2{
+  
+  text-align: center;
+  
+  font-family: 'Dancing Script', cursive;
+}
+
+.headimage {
+  height: 450px;
+  width: 450p;
+  float: right;
+}
+
+.info h3 {
+  color: rgb(64, 2, 73);
+  font-size: larger;
+}
+
+/* Main styles */
+main {
+  margin: auto;
+  padding: 2.5rem;
+  padding-top: 20px;
+}
+
+.heading p {
+  font-size: large;
+  font-weight: 200;
+  text-align: center;
+}
+
+.section {
+  margin-bottom: 2.25rem;
+  font-size: medium;
+
+}
+
+.d {
+  border: 1px solid hsl(60, 3%, 7%);
+  width: 56%;
+  height:80%;
+  border-radius: 2rem;
+  justify-content: space-around;
+  background-color: #ffffff;
+  padding: 20px;
+  margin-top:5%;
+
+}
+
+.d h1 {
+  font-size: xx-large;
+  font-family: 'Crimson Text', serif;
+}
+
+.d background-img {
+
+  width: 100px;
+  height: 100px;
+}
+
+.d1 {
+  font-family: 'Crimson Text', serif;
+ height: 80%;
+  width: 40%;
+  padding: 10px;
+  padding-top: 10px;
+  justify-content: space-around;
+}
+
+.d1 img {
+
+  width: fit-content;
+  width: 100%;
+}
+
+.why-choose-us {
+  background-color: #d8e6f8;
+  padding: auto;
+  text-align: center;
+  margin: auto;
+}
+
+.why-choose-us h3 {
+  margin-bottom: 10px;
+  padding: 2.5rem;
+  font-size: xx-large;
+  padding-bottom: 20px;
+  padding-top: 20px;
+}
+
+.cards-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  max-width: 100%;
+}
+
+.card1 {
+  background-color: #ECE5C7;
+  border: 1px solid #ddd;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  margin: 25px;
+  padding:15px;
+  text-align: center;
+  width: 30%;
+  margin-top: 10px;
+  border-radius: 15px;
+}
+.card1:hover{
+  background-color: #eacbcb;
+}
+.card1 img {
+  height: 60px;
+  width:60px;
+}
+
+.card1 h4 {
+  font-size: 24px;
+  margin-bottom: 0px;
+  margin-top:12px;
+}
+
+.card1 p {
+  margin-top:8px;
+  font-size: 16px;
+  color: #666;
+}
+
+
+.get-started {
+  background-color: #1b375b;
+  color: white;
+  text-align: center;
+  padding: 12px 30px 25px 30px;
+  margin-top: 40px;
+  margin-bottom: 20px;
+}
+
+.get-started h2 {
+  margin-top:10px;
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+
+.get-started p {
+  font-size: 18px;
+  margin-bottom: 30px;
+}
+
+.btn {
+  display: inline-block;
+  background-color: rgb(224, 241, 186);
+  color: #333;
+  font-size: 25px;
+  border-radius: 10px;
+  text-decoration: none;
+  transition: background-color 0.3s ease-in-out;
+  width: 13%;
+  height: 30%;
+  text-align: center;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+.btn:hover {
+  background-color: #bbe339;
+}
+
+
+.what-we-do {
+  background-color: #f5f5f5;
+  padding: 30px 0;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.what-we-do h2 {
+  font-size: 36px;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.services {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.service {
+  background-color: white;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  width: 30%;
+  padding: 20px;
+  text-align: center;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+.service:hover{
+  background-color: #e5ffb0;
+}
+.service img {
+  height: 60px;
+  width: 60px;
+}
+
+.service h3 {
+  font-size: 24px;
+  margin-top: 15px;
+}
+
+.service p {
+  font-size: 18px;
+}
+
+.container {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+}
+
+.card {
+  box-shadow: 0 0 5px #000000;
+  border-radius: 1rem;
+  margin: 30px;
+  padding: 30px;
+  width: calc(33.33% - 20px);
+  max-width: 500px;
+
+}
+
+.card img {
+  display: block;
+  margin: 0 auto;
+  max-width: 100%;
+  border-radius: 5px;
+}
+
+.card h3 {
+  margin-top: 15px;
+  text-align: center;
+}
+
+.card p {
+  margin-bottom: 0;
+  text-align: center;
+}
+
+.card:hover {
+  background-color: #B0DAFF;
+}
+
+footer {
+  background-color: #294a6b;
+  color: #fff;
+  padding: 1rem;
+  text-align: center;
+}
+
+.footer {
+  background-color: #150761;
+  padding: 15px;
+  color: #f3eded;
+}
+
+.footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.footer-column {
+  flex-basis: 30%;
+  margin-bottom: 20px;
+}
+
+.footer h3 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.footer p {
+  font-size: 16px;
+  margin-bottom: 8px;
+}
+
+.social-media a {
+  display: inline-block;
+  margin-right: 10px;
+  color: #ffffff;
+  transition: color 0.3s ease;
+}
+
+.social-media a:hover {
+  color: #c5d9f4;
+}
+
+.footer-bottom {
+  margin-top: 20px;
+  text-align: center;
+}

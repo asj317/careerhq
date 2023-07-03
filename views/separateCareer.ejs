@@ -1,0 +1,685 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+    integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+  <title>Specific Career</title>
+
+  <style>
+
+.body{
+    margin:0;
+    padding:0;
+    font-family: 'Poppins', sans-serif;
+}
+.nav{
+  display: flex;
+  margin: 0;
+  width: 100%;
+  justify-content: space-between;
+  background-color: #324E7B;
+  padding: 0;
+  height: 10vh;
+}
+@media screen and (max-width: 700px){
+  nav{
+      flex-direction: column;
+  }
+}
+.navbtn:hover{
+  background-color: white;
+  color: #000;
+  border-radius: 10%;
+}
+.navbtn{
+  padding-left: 5px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-right: 5px;
+}
+.nav a{
+  position: relative;
+}
+.nav ul li{
+  list-style-type: none;
+}
+
+.weblogo img{
+  top:10%;
+  position: relative;
+  height: 80%;
+  width:80px;
+  padding-left: 40px;
+  padding-right: 40px;
+}
+  .contents{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 50%;
+      height: 5vh;
+      margin-top: 25px;
+      margin-bottom: 25px;
+      padding-left: 40px;
+      padding-right: 40px;
+  }
+  .contents ul{
+      list-style-type:none;
+  }
+  .contents li a{
+      text-decoration:none;
+      color:white;
+      font-size: larger;
+      font-family: 'Poppins', sans-serif;
+      
+  }
+
+.row{
+  margin-left:0px;
+}
+
+
+.container-fluid{
+    width: 100%;
+    height: 150px;
+    padding-left: 3px;
+    padding-right: 3px;
+    position: relative;
+}
+
+.container{
+    width: 100%;
+    height: 50vh;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.slide-container{
+    position: relative;
+    font-family: Arial;
+    margin-left: 3px;
+    margin-right: 3px;
+
+}
+  
+.text-block {
+    position: absolute;
+    bottom: 3px;
+    left: 3px;
+    background-color: none;
+    color: rgb(255, 255, 255);
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 5px;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+
+.main{
+  margin-left: 0px;
+  margin-top: 5px;
+  background-image: url("https://images.ctfassets.net/pdf29us7flmy/cbG7lrc1qaWI03Te5Cr16/376b2c11236313d8d3e6643be97519d4/Your_Guide_to_Careers_in_Finance_D1_social.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  object-fit: cover;
+}
+.col-7{
+  border: #467fe1 solid 5px;
+  border-radius: 5px;
+  font-family: 'Poppins', sans-serif;
+  
+}
+.col-4{
+  
+  border: #467fe1 solid 5px;
+  border-radius: 5px;
+  font-family: 'Poppins', sans-serif;
+}
+.col-3{
+  border: #467fe1 solid 5px;
+  border-radius: 5px;
+  width: 150px;
+  font-family: 'Poppins', sans-serif;
+}
+.row h4{
+  text-align: center;
+  font-family: 'Poppins', sans-serif;
+}
+
+.info{
+  font-size: large;
+  font-family: 'Poppins', sans-serif;
+}
+
+
+.card {
+  max-width: 380px;
+  margin: auto;
+  text-align: center;
+  font-family: 'Poppins', sans-serif;
+}
+.card h3{
+  margin-top: 5px;
+}
+.title {
+  color: rgb(0, 0, 0);
+  font-size: large;
+  margin-top: 5px;
+  font-family: 'Poppins', sans-serif;
+}
+
+.con{
+  border: black solid 1px;
+  border-radius: 5px;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #467fe1;
+  text-align: center;
+  justify-content: center;
+  cursor: pointer;
+  width: 40%;
+  font-size: 16px;
+  font-family: 'Poppins', sans-serif;
+}
+
+.conexp{
+  height: 150px;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+}
+a {
+  text-decoration: none;
+  font-size: 15px;
+  color: black;
+}
+
+.con:hover, a:hover {
+  opacity: 0.7;
+}
+
+.expslider{
+    display: flex;
+    align-items: center;
+    height: 30vh;
+    width: 60%;
+    padding: 5px 0px;
+    justify-content: center;
+    margin: auto;
+}
+.exp1{
+    height: 80%;
+    width: 25%;
+    max-width: 300px;
+    margin: auto;
+    text-align: center;
+    font-family: arial;
+    border: #324E7B solid 3px;
+    border-radius: 3%;
+
+}
+.exp1 h3{
+    font-size: larger;
+    font-weight: bold;
+    height: 10%;
+    width: 100%;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 2px;
+    font-family: 'Poppins', sans-serif;
+}
+.exp1 img{
+    height: 60%;
+    width: 65%;
+    border-radius: 50%;
+    position: relative;
+    margin:auto;
+    margin-top: 10px;
+    border: #324E7B solid 1px;
+    box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.2);
+}
+.emma{
+  background-color: rgb(214, 232, 248);
+}
+
+    #more {
+      display: none;
+    }
+
+    #more1 {
+      display: none;
+    }
+
+    #more2 {
+      display: none;
+    }
+
+    #more3 {
+      display: none;
+    }
+
+    #more4 {
+      display: none;
+    }
+
+    #more5 {
+      display: none;
+    }
+
+    #more6 {
+      display: none;
+    }
+
+    #more7 {
+      display: none;
+    }
+
+    #more8 {
+      display: none;
+    }
+
+    #more9 {
+      display: none;
+    }
+
+    .navbar{
+      padding:0;
+      align-items: center;
+    }
+    .contents{
+      width:40%;
+      left:30%;
+      position:relative;
+    }
+  </style>
+</head>
+
+<body>
+  <header class="navbar">
+    <div class="nav">
+      <ul class="contents">
+        <li><a href="/signup" class="navbtn">SignUp</a></li>
+        <li><a href="/login" class="navbtn">Login</a></li>
+        <li><a href="/mainpage" class="navbtn">Careers</a></li>
+        <li><a href="/quizz" class="navbtn">Take Test</a></li>
+        <li><a href="#footer" class="navbtn">Contact Us</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <div class="slide-container w-85 mt-3" style="height: 250 px">
+    <div id="carouselExampleSlidesOnly" class="carousel-slide" data-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img class="d-block w-100" src="<%=i1%>" style="height: 300px" alt="First slide" />
+          <div class="text-block mx-3 my-1" style="width: 40%">
+            <h5><b> <%= (title)  %></b></h5>
+            <p class="info">
+              <%= (thought)  %>
+            </p>
+          </div>
+        </div>
+
+        <div class="carousel-item">
+          <img class="d-block w-100" src="<%=i2%>" style="height: 300px" alt="Second slide" />
+          <div class="text-block mx-3 my-1" style="width: 40%">
+            <h5><b><%= (title)  %></b></h5>
+            <p class="info">
+              <%= (thought)  %>
+          </div>
+        </div>
+
+        <div class="carousel-item">
+          <img class="d-block w-100" src="<%=i1%>" style="height: 300px" alt="Third slide" />
+          <div class="text-block mx-3 my-1" style="width: 40%">
+            <h5><b><%= (title)  %></b></h5>
+            <p class="info">
+              <%= (thought)  %>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+  <div class="main">
+    <div class="row justify-content-between mw-100 p-3 ml-1.5">
+      <div class="col-7 w-75 p-3">
+        <h4> <b>OVERVIEW</b> </h4>
+        <p class="info">
+            <%= (overview.substring(0,450))  %>
+          <span id="dots">...</span>
+          <br />
+          <br />
+          <span id="more">
+            <%= (overview.substring(450))  %>
+          </span>
+        </p>
+        <button onclick="myFunction()" id="myBtn">Read More</button>
+      </div>
+
+
+      <div class="col-4 w-25 p-3">
+        <h4><b>ENTRANCE EXAM DETAILS</b></h4>
+        <p class="info">
+            <%= (entrance_exam_details.substring(0,300))  %>
+          <span id="dots">...</span>
+          <br />
+          <span id="more1">
+            <%= (entrance_exam_details.substring(300))  %>
+          </span>
+        </p>
+        <button onclick="myFunction1()" id="myBtn1">Read More</button>
+      </div>
+    </div>
+
+    <!-- row2 -->
+    <div class="row w-100 p-3 justify-content-between">
+      <div class="col-4 w-25 p-3" style="max-width: 400px">
+        <h4><b>ROLES & RESPONSIBILITIES</b></h4>
+        <p class="info">
+            <%= (roles_and_responsibilities.substring(0,300))  %>
+          <span id="dots">...</span>
+          <br />
+          <span id="more2">
+            <%= (roles_and_responsibilities.substring(300))  %>
+          </span>
+        </p>
+        <button onclick="myFunction2()" id="myBtn2">Read More</button>
+      </div>
+
+
+      <div class="col-4 w-25 p-3" style="max-width: 400px">
+        <h4><b>WORK OPPURTUNITIES</b></h4>
+        <p class="info">
+            <%= (work_opportunities.substring(0,250))  %>
+          <span id="dots">...</span>
+          <br />
+
+          <span id="more3">
+            <%= (work_opportunities.substring(0,250))  %>
+          </span>
+        </p>
+        <button onclick="myFunction3()" id="myBtn3">Read More</button>
+      </div>
+
+
+
+      <div class="col-4 w-25 p-3" style="max-width: 400px">
+        <h4><b>RECOMMENDED COLLEGES & COURSES</b></h4>
+        <p class="info">
+            <%= (recommended_courses_and_colleges.substring(0,250))  %>
+          <span id="dots">...</span>
+          <br />
+
+          <span id="more6">
+
+            <%= (recommended_courses_and_colleges.substring(250))  %>
+          </span>
+        </p>
+        <button onclick="myFunction6()" id="myBtn6">Read More</button>
+      </div>
+    </div>
+
+    <!-- row3 -->
+    <div class="row justify-content-between mw-100 p-3 ml-1.5">
+      <div class="col-4 w-25 p-3">
+        <h4><b>GENERAL EDUCATION PATH</b></h4>
+        <p class="info">
+            <%= (general_education_path.substring(0,300))  %>
+          <span id="dots">...</span>
+          <br />
+          <br>
+          <span id="more5">
+            <%= (general_education_path.substring(0,300))  %>
+          </span>
+        </p>
+        <button onclick="myFunction5()" id="myBtn5">Read More</button>
+      </div>
+
+      <div class="col-7 w-75 p-3">
+        <h4><b>REQUIRED SKILLS & PERSONALITY TRAITS</b></h4>
+        <p class="info">
+            <%= (skills_and_personality_traits.substring(0,500))  %>
+          <span id="dots">...</span>
+          <br />
+
+          <span id="more4">
+            <%= (skills_and_personality_traits.substring(500))  %>
+          </span>
+        </p>
+        <button onclick="myFunction4()" id="myBtn4">Read More</button>
+      </div>
+    </div>
+
+    <!-- row4 -->
+    <div class="row w-100 p-3 justify-content-between ">
+      <div class="col-4 w-25 p-3" style="max-width: 400px">
+        <h4><b>EXPERT ADVICE</b></h4>
+        <div class="card emma">
+          <img src="<%=u%>" alt="John" class="conexp">
+          <h3>Emma Watson</h3>
+          <p class="info">
+            <%= (expert_advise.substring(0,50))  %>
+            <span id="dots">...</span>
+            <br />
+            <span id="more7">
+                <%= (expert_advise.substring(50))  %>
+            </span>
+          </p>
+          <p><button onclick="myFunction7()" id="myBtn7">Read More</button></p>
+
+          <p><button class="con">CONTACT</button></p>
+        </div>
+
+      </div>
+
+      <div class="col-4 w-25 p-3" style="max-width: 400px">
+        <h4><b>SALARY EXPECTED</b></h4>
+        <p class="info">
+            <%= (salary.substring(0,100))  %>
+          <span id="dots">...</span>
+          <br />
+          <span id="more8">
+            <%= (salary.substring(100))  %>
+          </span>
+        </p>
+        <button onclick="myFunction8()" id="myBtn8">Read More</button>
+      </div>
+      <div class="col-4 w-25 p-3" style="max-width: 400px">
+        <h4><b>INTERESTING FACTS</b></h4>
+        <p class="info">
+            <%= (salary.substring(0,30))  %>
+          <span id="dots">...</span>
+          <br />
+          <span id="more9">
+            <%= (salary.substring(0,30))  %>
+        </p>
+        </span>
+        <button onclick="myFunction9()" id="myBtn9">Read More</button>
+      </div>
+    </div>
+
+    <script>
+      function myFunction() {
+        var dots = document.getElementById("dots");
+        var moreText = document.getElementById("more");
+        var btnText = document.getElementById("myBtn");
+
+        if (dots.style.display === "none") {
+          dots.style.display = "inline";
+          btnText.innerHTML = "Read more";
+          moreText.style.display = "none";
+        } else {
+          dots.style.display = "none";
+          btnText.innerHTML = "Read less";
+          moreText.style.display = "inline";
+        }
+      }
+
+      function myFunction1() {
+        var dots = document.getElementById("dots");
+        var moreText = document.getElementById("more1");
+        var btnText = document.getElementById("myBtn1");
+
+        if (dots.style.display === "none") {
+          dots.style.display = "inline";
+          btnText.innerHTML = "Read more";
+          moreText.style.display = "none";
+        } else {
+          dots.style.display = "none";
+          btnText.innerHTML = "Read less";
+          moreText.style.display = "inline";
+        }
+      }
+
+      function myFunction2() {
+        var dots = document.getElementById("dots");
+        var moreText = document.getElementById("more2");
+        var btnText = document.getElementById("myBtn2");
+
+        if (dots.style.display === "none") {
+          dots.style.display = "inline";
+          btnText.innerHTML = "Read more";
+          moreText.style.display = "none";
+        } else {
+          dots.style.display = "none";
+          btnText.innerHTML = "Read less";
+          moreText.style.display = "inline";
+        }
+      }
+
+      function myFunction3() {
+        var dots = document.getElementById("dots");
+        var moreText = document.getElementById("more3");
+        var btnText = document.getElementById("myBtn3");
+
+        if (dots.style.display === "none") {
+          dots.style.display = "inline";
+          btnText.innerHTML = "Read more";
+          moreText.style.display = "none";
+        } else {
+          dots.style.display = "none";
+          btnText.innerHTML = "Read less";
+          moreText.style.display = "inline";
+        }
+      }
+
+      function myFunction4() {
+        var dots = document.getElementById("dots");
+        var moreText = document.getElementById("more4");
+        var btnText = document.getElementById("myBtn4");
+
+        if (dots.style.display === "none") {
+          dots.style.display = "inline";
+          btnText.innerHTML = "Read more";
+          moreText.style.display = "none";
+        } else {
+          dots.style.display = "none";
+          btnText.innerHTML = "Read less";
+          moreText.style.display = "inline";
+        }
+      }
+
+      function myFunction5() {
+        var dots = document.getElementById("dots");
+        var moreText = document.getElementById("more5");
+        var btnText = document.getElementById("myBtn5");
+
+        if (dots.style.display === "none") {
+          dots.style.display = "inline";
+          btnText.innerHTML = "Read more";
+          moreText.style.display = "none";
+        } else {
+          dots.style.display = "none";
+          btnText.innerHTML = "Read less";
+          moreText.style.display = "inline";
+        }
+      }
+
+      function myFunction6() {
+        var dots = document.getElementById("dots");
+        var moreText = document.getElementById("more6");
+        var btnText = document.getElementById("myBtn6");
+
+        if (dots.style.display === "none") {
+          dots.style.display = "inline";
+          btnText.innerHTML = "Read more";
+          moreText.style.display = "none";
+        } else {
+          dots.style.display = "none";
+          btnText.innerHTML = "Read less";
+          moreText.style.display = "inline";
+        }
+      }
+
+      function myFunction7() {
+        var dots = document.getElementById("dots");
+        var moreText = document.getElementById("more7");
+        var btnText = document.getElementById("myBtn7");
+
+        if (dots.style.display === "none") {
+          dots.style.display = "inline";
+          btnText.innerHTML = "Read more";
+          moreText.style.display = "none";
+        } else {
+          dots.style.display = "none";
+          btnText.innerHTML = "Read less";
+          moreText.style.display = "inline";
+        }
+      }
+
+      function myFunction8() {
+        var dots = document.getElementById("dots");
+        var moreText = document.getElementById("more8");
+        var btnText = document.getElementById("myBtn8");
+
+        if (dots.style.display === "none") {
+          dots.style.display = "inline";
+          btnText.innerHTML = "Read more";
+          moreText.style.display = "none";
+        } else {
+          dots.style.display = "none";
+          btnText.innerHTML = "Read less";
+          moreText.style.display = "inline";
+        }
+      }
+
+      function myFunction9() {
+        var dots = document.getElementById("dots");
+        var moreText = document.getElementById("more9");
+        var btnText = document.getElementById("myBtn9");
+
+        if (dots.style.display === "none") {
+          dots.style.display = "inline";
+          btnText.innerHTML = "Read more";
+          moreText.style.display = "none";
+        } else {
+          dots.style.display = "none";
+          btnText.innerHTML = "Read less";
+          moreText.style.display = "inline";
+        }
+      }
+    </script>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>

@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+
+    <style>
+        .body {
+            margin: 0px;
+        }
+
+        .container {
+            height: 95vh;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+            background-color: rgb(252, 251, 251);
+            border: #00307c solid 2px;
+        }
+
+        .lleft {
+            position: relative;
+            height: 100%;
+            width: 50%;
+            display: inline;
+            background-image: url("/newimages/use_this.jpg");
+            background-size: cover;
+            background-repeat: no-repeat;
+            object-fit: contain;
+        }
+
+        .lright {
+            height: 100%;
+            width: 50%;
+            text-align: center;
+            float: center;
+            justify-content: center;
+            background-color: #d2ddee;
+        }
+
+        .text-block {
+            position: absolute;
+            bottom: 15px;
+            left: 20px;
+            background-color: none;
+            color: black;
+            padding: 10px;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        .text-block h1 {
+            font-size: 3.5rem;
+            font-weight: bold;
+        }
+
+        .lright h1 {
+            font-size: 3.5rem;
+            font-weight: bold;
+            color: #324E7B;
+            margin-top: 25%;
+        }
+
+        .lright a {
+            color: #00307c;
+        }
+
+        .form-floating {
+            border-radius: 5px;
+            width: 80%;
+            margin-left: 60px;
+        }
+
+        .form-floating label {
+            color: #324E7B;
+        }
+
+        .lgn {
+            border: #324E7B solid 1px;
+            border-radius: 5px;
+            outline: 0;
+            display: inline-block;
+            padding: 8px;
+            color: white;
+            background-color: #324E7B;
+            text-align: center;
+            justify-content: center;
+            cursor: pointer;
+            width: 30%;
+            font-size: 16px;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        .lgn:hover {
+            opacity: 0.7;
+        }
+    </style>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+</head>
+
+
+<body>
+    <div class="container">
+        <div class="lleft">
+
+            <div class="text-block mx-10 my-5" style="width: 80%">
+                <h1>Only The</h1>
+                <h1>Best Career</h1>
+                <h1>For Everyone !!!</h1>
+            </div>
+        </div>
+        <div class="lright">
+            <h1>CareerHQ</h1>
+            <form action="/login" method="POST">
+                <div class="form-floating mb-4 my-5">
+                    <input type="email" name="username" method="POST" class="form-control" id="floatingInput"
+                        placeholder="name@example.com" value="email">
+                    <label for="floatingInput">Username</label>
+                </div>
+                <div class="form-floating mb-5">
+                    <input type="password" name="password" method="POST" class="form-control" id="floatingPassword"
+                        placeholder="Password" value="123456">
+                    <label for="floatingPassword">Password</label>
+                </div>
+
+                <p><button class="lgn" method="POST" action="/mainpage">Login</button></p>
+
+                <a href="">Forgot Password? Reset it now!</a>
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>

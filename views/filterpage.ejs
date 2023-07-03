@@ -1,0 +1,55 @@
+<%- include("partials/header.ejs"); -%>
+
+  <form action="/filter" method="post" class="filter">
+    <select name="skills" id="skills" class="filterChild">
+      <option value="Teaching" disabled selected>Skills</option>
+      <option value="Coding">Coding</option>
+      <option value="Teaching">Teaching</option>
+      <option value="Oratory_Skills">Oratory Skills</option>
+    </select>
+
+    <select name="interests" id="interests" class="filterChild">
+      <option value="Arts" disabled selected>Interests</option>
+      <option value="Science">Science</option>
+      <option value="Arts">Arts</option>
+      <option value="Commerce">Commerce</option>
+    </select>
+
+    <select name="popular" id="popular" class="filterChild">
+      <option value="Management" disabled selected>Popular</option>
+      <option value="Software_Engineering">Software Engineering</option>
+      <option value="Management">Management</option>
+      <option value="MBBS">MBBS</option>
+    </select>
+
+    <select name="government" id="government" class="filterChild">
+      <option value="Banking" disabled selected>Government</option>
+      <option value="Defence">Defence</option>
+      <option value="Banking">Banking</option>
+      <option value="Railway">Railway</option>
+    </select>
+
+    <select name="freelancing" id="freelancing" class="filterChild">
+      <option value="Video_Editing" disabled selected>Freelancing</option>
+      <option value="Content_Writing">Content Writing</option>
+      <option value="Video_Editing">Video Editing</option>
+      <option value="Web_Development">Web Development</option>
+    </select>
+    <button type="submit">Apply Filters</button>
+
+  </form>
+  <div class="ParentMain">
+    <% array.forEach( function(v1){ %>
+
+      <div class="main">
+        <img src="<%=v1.src%>">
+          <% var s=v1.Title; %>
+            <a class="sideMain" href="/career/<%=s%>">
+              <%= (v1.Title)%>
+            </a>
+      </div>
+      <% }); %>
+  </div>
+  </body>
+
+  </html>
