@@ -19,7 +19,7 @@ app.use(bodyParser.urlencoded({
 }));
 
 //connecting mongodb server
-const uri = process.env.MONGOID;
+const uri = "mongodb+srv://abhisheksjadhav2002:o2eX56gsazQBBqd8@cluster0.rrh8kfl.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0";
 async function connect() {
 
   try {
@@ -154,7 +154,7 @@ app.post("/login", function (req, res) {
 
 
 app.listen(port, () => {
-  // console.log(`http://localhost:${port}`)
+  console.log(`http://localhost:${port}`)
 })
 
 
